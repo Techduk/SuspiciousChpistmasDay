@@ -23,6 +23,7 @@ body {
     height: 2000px;
     background-attachment: fixed;
     font-family: 'Nunito', sans-serif;
+    overflow-x: hidden;
 }
 
 header {
@@ -35,6 +36,12 @@ header {
     position: fixed;
 }
 
+
+.imgs {
+    display: flex;
+    justify-content: center;
+  }
+
 .image {
     max-width: 100%;
     height: auto;
@@ -43,9 +50,6 @@ header {
 .logo {
     max-width: 640px;
     width: 55%;
-    display: flex;
-    justify-content: center;
-    align-items:center;
     margin-top: 50px;
     position: absolute;
     
