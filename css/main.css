@@ -19,11 +19,8 @@
 
 /*БГ*/
 body {
-    background-image: url(img/grund.png);
     background-color: #cce3de;
-    background-attachment: fixed; /* Фон страницы фиксируется */
-	background-repeat: repeat-x; /* Изображение повторяется по горизонтали */
-    /* height: 2000px; */
+    height: 2000px;
     background-attachment: fixed;
     font-family: 'Nunito', sans-serif;
 }
@@ -33,8 +30,9 @@ header {
     height: 50px;
     text-align: left;
     background: #292933;
-    position: absolute;
     z-index: 100;
+    border-bottom: 2px solid #0a0a21!important;
+    position: fixed;
 }
 
 .image {
@@ -50,4 +48,35 @@ header {
     margin-right: auto;
     margin-top: 50px;
     height: auto;
+    position: absolute;
+    text-align: left;
+}
+
+
+
+
+
+/* Футер */
+footer {
+    width: 100%;
+    height: 70px;
+    text-align: left;
+    background: #292933;
+    color:#eeeeee;
+    line-height: 70px;
+    float: left;
+}
+
+footer h1 {
+    font-size: 15px;
+    margin-left: 1%;
+}
+
+h1 .fundukus {
+    max-width: 50px;
+    width: 55%;
+}
+
+.border-top {
+    border-top: 2px solid #0a0a21!important;
 }
