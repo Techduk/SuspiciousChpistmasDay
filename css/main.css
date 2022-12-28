@@ -35,27 +35,21 @@ header {
     position: fixed;
 }
 
-
-.title-images {
-    position: relative;
-}
-
-
 .image {
     max-width: 100%;
     height: auto;
-    z-index: 0;
 }
 
 .logo {
     max-width: 640px;
     width: 55%;
-    margin-top: 5px;
-    width: 225px;
+    display: block;
     margin-left: auto;
     margin-right: auto;
-    display: block;
-    z-index: 1;
+    margin-top: 50px;
+    height: auto;
+    position: absolute;
+    text-align: left;
 }
 
 
@@ -71,6 +65,7 @@ footer {
     color:#eeeeee;
     line-height: 70px;
     float: left;
+    margin-top: 2000px;
 }
 
 footer h1 {
