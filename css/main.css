@@ -16,7 +16,6 @@
     float: left;
 }
 
-
 /*БГ*/
 body {
     background-color: #cce3de;
@@ -64,8 +63,8 @@ header {
     margin: 0px 0px 10px;
     padding: 10px 30px;
     position: relative;
-    border: 2px solid #292933;
-    color: #292933;
+    border: 2px solid #FFF;
+    color: #FFF;
     font-family: 'Nunito', sans-serif;
     transition: .4s;
     font-weight: 700;
@@ -88,7 +87,7 @@ header {
 }
 
 .double-border-button:hover:after {
-    border-color: #0a0a21;
+    border-color: #FFF;
     width: calc(100% - 10px);
     height: calc(100% + 10px);
 }
@@ -120,7 +119,7 @@ header {
 }
 
 .carousel-indicators [data-bs-target] {
-    background-color: #292933;
+    background-color: #FFF;
 }
 
 .main-content {
@@ -144,7 +143,7 @@ header {
 
 .cool-ss {
     border-radius: 10px;
-    box-shadow: 0 0 10px #292933;
+    box-shadow: 0 0 10px #FFF;
 }
 
 
@@ -167,9 +166,29 @@ header {
 
 /* На заметку: "margin: Вниз Влево Вверх Вправо */
 .credits {
-    margin: 50px 0 0 3%;
+    color: #FFF;
 }
 
+.credits img {
+    max-width: 100px;
+}
+
+.who-work {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.guys {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    font-size: 20px;
+}
+
+#onr {
+    margin-left: 20%;
+}
 
 
 
@@ -184,7 +203,7 @@ footer {
     color:#eeeeee;
     line-height: 70px;
     float: left;
-    margin-top: 2000px;
+    margin-top: 50px;
 }
 
 footer h1 {
