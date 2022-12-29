@@ -43,6 +43,22 @@
 </div>
 
 
+
+
+
+<main>
+    <img id="change_image_2" src="img/screenshoot1.png">
+
+    <button onclick="go_to_left()" class="button ">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    </button>
+
+    <button onclick="go_to_right()" class="button" style="float: right;">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    </button>
+</main>
+
+
 <!-- Скриншоты -->
 <div>
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -53,13 +69,13 @@
        </ol>
        <div class="carousel-inner">
         <div class="carousel-item active">
-          <img class="d-block w-100" src="img/screenshoot1.png" alt="Первый слайд">
+          <img class="d-block w-100" src="..." alt="Первый слайд">
        </div>
         <div class="carousel-item">
-          <img class="d-block w-100" src="img/screenshoot2.png" alt="Второй слайд">
+          <img class="d-block w-100" src="..." alt="Второй слайд">
          </div>
          <div class="carousel-item">
-           <img class="d-block w-100" src="img/screenshoot1.png" alt="Третий слайд">
+           <img class="d-block w-100" src="..." alt="Третий слайд">
           </div>
         </div>
         <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -88,3 +104,38 @@
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
     </body>
+    
+
+<!--  Scripts  -->
+    <script>
+        var theNum = "0";
+
+let arr = ["screenshoot1", "screenshoot2", "screenshoot1", "screenshoot2"];
+
+function go_to_right()
+
+{
+
+  theNum++;
+
+  if(theNum == arr.length){theNum="0";}
+
+  change_image_2.src='img/'+arr[theNum]+'.png';
+
+}
+
+function go_to_left()
+
+{
+
+  theNum--;
+
+  if(theNum == "-1"){theNum = arr.length -1; };
+
+  change_image_2.src='img/'+arr[theNum]+'.png';
+
+}
+
+
+    </script>
+    </html>
