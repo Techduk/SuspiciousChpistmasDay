@@ -95,7 +95,7 @@ header {
 
 .intro__button {
     position: relative;
-    margin-top: 80px;
+    margin-top: 40px;
     left: 50%;
     transform: translate(-50%, 0);
 }
@@ -119,6 +119,13 @@ header {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23292933' width='8' height='8' viewBox='0 0 8 8'%3e%3cpath d='M2.75 0l-1.5 1.5L3.75 4l-2.5 2.5L2.75 8l4-4-4-4z'/%3e%3c/svg%3e");
 }
 
+.carousel-indicators [data-bs-target] {
+    background-color: #292933;
+}
+
+.main-content {
+    margin-top: 40px;
+}
 
 
 
@@ -155,6 +162,18 @@ header {
     margin-right: auto;
 }
 
+
+/* Credits (ASide) */
+
+/* На заметку: "margin: Вниз Влево Вверх Вправо */
+.credits {
+    margin: 50px 0 0 3%;
+}
+
+
+
+
+/* Credits DeathEnd */
 
 /* Футер */
 footer {
