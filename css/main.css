@@ -40,7 +40,7 @@ header {
 .imgs {
     display: flex;
     justify-content: center;
-  }
+}
 
 .image {
     max-width: 100%;
@@ -120,6 +120,25 @@ header {
 }
 
 
+
+
+.my-carousel {
+    padding: 0;
+}
+
+.my-carousel .carousel-item {
+    display: flex;
+    max-height: 250px;
+}
+
+.my-carousel .carousel-item img {
+    object-fit: cover;
+}
+
+.cool-ss {
+    border-radius: 10px;
+    box-shadow: 0 0 10px #292933;
+}
 
 
 .button {
