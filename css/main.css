@@ -83,7 +83,7 @@ input:focus {
 }
 
 
-/* Кнопка */
+/* Кнопки */
 .double-border-button {
     text-decoration: none;
     display: inline-block;
@@ -121,9 +121,8 @@ input:focus {
 
 .intro__button {
     position: relative;
-    margin-top: 40px;
     left: 50%;
-    transform: translate(-50%, 0);
+    transform: translate(-105%, 0);
 }
 
 
