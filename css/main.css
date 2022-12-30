@@ -82,15 +82,6 @@ input:focus {
     height: auto;
 }
 
-.logo {
-    max-width: 640px;
-    width: 55%;
-    margin-top: 5px;
-    transform: rotate(-10deg);
-    position: absolute;
-    
-}
-
 
 /* Кнопка */
 .double-border-button {
