@@ -16,6 +16,10 @@
     float: left;
 }
 
+#snow-animation-container {
+    position: fixed;
+}
+
 /*БГ*/
 body {
     background-color: #cce3de;
@@ -36,6 +40,38 @@ header {
 }
 
 
+.snow-button {
+    border: 2px solid #cccccc; /*цвет рамки */
+    border-radius: 3px; /*закругление углов (общее) */
+    -webkit-border-radius: 3px; /*закругление углов (Google Chrome) */
+    -moz-border-radius: 3px; /*закругление углов (FireFox) */
+    -khtml-border-radius: 3px; /*закругление углов (Safari) */
+    background: none !important; /* желательно прописывать, так как в Chrome при сохранных данных оно может быть желтым */
+    outline: none; /* удаляет обводку в браузерах хром(желтая) и сафари(синяя) */
+    height: calc(24px + 8px); /* высота на свое усмотрение */
+    width: calc(75px + 5px); /* ширина на свое усмотрение */
+    color: #cccccc; /*цвет шрифта в обычном состоянии */
+    font-size: calc(5px + 1vw); /* Размер шрифта */
+    font-family: 'Nunito', sans-serif; /* Стиль шрифта */
+
+    margin: 10px 0 0 1%;
+}
+
+input:focus {
+    color: #DAE0FF;
+    border: 2px solid #DAE0FF
+}
+
+
+
+
+
+#cooltext {
+    color: #DAE0FF;
+}
+
+
+
 .imgs {
     display: flex;
     justify-content: center;
@@ -49,7 +85,7 @@ header {
 .logo {
     max-width: 640px;
     width: 55%;
-    margin-top: 1%;
+    margin-top: 5px;
     transform: rotate(-10deg);
     position: absolute;
     

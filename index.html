@@ -14,7 +14,6 @@
         <title>SuspiciousChpistmasDay</title>
 
 
-
     </head>
 
     <body>
@@ -24,13 +23,19 @@
         <div id="snow-animation-container"></div>
 
         <title>Фоновое изображение</title>
-            <style type="text/css">
+        <style type="text/css">
             BODY {
              background: url(img/grunde.png) repeat-y; /* Параметры фона */
             }
-            </style>
+        </style>
 
-        <header>
+<header>
+<div class="snow-border">
+    <input type="button" class="snow-button" id="clear" value="Выкл">
+    <input type="button" class="snow-button" id="round" value="Вкл">
+    <a id="cooltext"><- Переключатель снега :D</a>
+</div>
+
 </header>
 
 <div class="row row-cols-1 imgs">
@@ -150,5 +155,29 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
 
-<script src="js/script.js"></script>
-    </body>
+<!-- <script src="js/script.js"></script> -->
+<script src="js/batton.js"></script>
+
+
+
+<script src="js/snowfall.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+            $('.collectonme').hide();
+            //Start the snow default options you can also make it snow in certain elements, etc.
+            $(document).snowfall();
+            
+            $("#clear").click(function(){
+                $(document).snowfall('clear'); // How you clear
+            });
+            
+            $("#round").click(function(){
+                document.body.className  = "darkBg";
+                $('.collectonme').hide();
+                $(document).snowfall('clear');
+                $(document).snowfall({round : true, minSize: 5, maxSize:8}); // add rounded
+            });
+        });
+</script>
+
+</body>
